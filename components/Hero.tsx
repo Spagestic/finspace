@@ -6,9 +6,9 @@ export default function Hero() {
       <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
       <Image
         src="/bg-1.png"
-        alt="University students learning financial literacy and budgeting"
+        alt="Hero Background"
         className="w-full h-full object-cover"
-        loading="eager"
+        loading="lazy"
         width={1920}
         height={1080}
       />
