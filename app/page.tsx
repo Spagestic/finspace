@@ -14,13 +14,16 @@ import { BookOpen, Trophy, Target, TrendingUp, PiggyBank } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Header } from "@/components/Header";
-
+import Hero from "@/components/Hero";
 export default function Home() {
   const [showQuiz, setShowQuiz] = useState(false);
 
   return (
     <div className="min-h-screen bg-linear-to-b from-background via-accent/20 to-background">
-      <Header />
+      <div className="relative">
+        <Header />
+        <Hero />
+      </div>
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-r from-primary/5 to-primary/10" />
