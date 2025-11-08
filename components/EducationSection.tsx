@@ -12,7 +12,7 @@ import { PiggyBank, TrendingUp, Shield, Target } from "lucide-react";
 
 export default function EducationSection() {
   return (
-    <div id="education" className="w-full max-w-6xl mx-auto">
+    <div id="basics" className="w-full max-w-6xl mx-auto py-12">
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Financial Literacy Basics

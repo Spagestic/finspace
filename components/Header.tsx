@@ -18,9 +18,9 @@ export function Header() {
         </Link>
         <Link
           className="rounded-full px-3 py-2 font-light text-primary-foreground text-xs transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
-          href="#pricing"
+          href="#basics"
         >
-          Pricing
+          Basics
         </Link>
         <Link
           className="rounded-full px-3 py-2 font-light text-primary-foreground text-xs transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
