@@ -24,40 +24,6 @@ export default function Home() {
         <Header />
         <Hero />
       </div>
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-linear-to-r from-primary/5 to-primary/10" />
-        <div className="relative max-w-6xl mx-auto text-center space-y-6">
-          <div className="inline-block p-3 bg-primary/10 rounded-full mb-4"></div>
-
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Fin<span className="text-primary">Space</span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
-            Master essential financial skills through interactive quizzes and
-            educational content. Build your budgeting knowledge and compete with
-            peers!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button
-              size="lg"
-              className="text-lg px-8 py-6"
-              onClick={() => setShowQuiz(true)}
-            >
-              <Trophy className="w-5 h-5 mr-2" />
-              Start Quiz Challenge
-            </Button>
-            <Link href="/leaderboard">
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6">
-                <TrendingUp className="w-5 h-5 mr-2" />
-                View Leaderboard
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
