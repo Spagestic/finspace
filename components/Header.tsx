@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between py-2 px-6">
+    <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-6">
       {/* Logo */}
       <div className="flex items-center font-semibold text-primary-foreground">
         <Link href="/">FinSpace</Link>
