@@ -18,9 +18,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="max-w-6xl mx-auto text-center text-muted-foreground">
-          <p>
-            © 2024 Finance Literacy Competition. Empowering financial education.
-          </p>
+          <p>© 2024 FinSpace.</p>
         </div>
       </footer>
     </div>
