@@ -40,9 +40,8 @@ export default function Home() {
       )}
 
       {/* Education Section */}
-      <section className="py-16 px-4">
-        <EducationSection />
-      </section>
+
+      <EducationSection />
 
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 to-primary/5">
