@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden bg-white/5 border-white/10 border w-full min-h-[90vh]">
+    <div className="relative overflow-hidden bg-white/5 border-white/10 border w-full h-screen">
       <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
       <Image
         src="/bg-1.png"
-        alt="Creative team working on design projects"
+        alt="University students learning financial literacy and budgeting"
         className="w-full h-full object-cover"
         loading="eager"
         width={1920}
@@ -18,14 +18,13 @@ export default function Hero() {
         <div className="w-full sm:p-8 pt-6 pr-6 pb-6 pl-6">
           <div className="max-w-3xl">
             <h2 className="text-3xl sm:text-4xl lg:text-7xl text-white font-geist tracking-tighter drop-shadow-lg">
-              Design that moves brands forward
+              Master Your Finances
             </h2>
             <p className="sm:text-lg leading-relaxed text-lg font-normal text-white/90 font-geist mt-3 drop-shadow-sm">
-              We craft brand identities, digital products, and strategic
-              campaigns for ambitious teams. From concept to launch, our studio
-              blends clarity, utility, and aesthetics to create work that
-              performs and endures. Explore a curated reel of recent
-              collaborations and outcomes.
+              FinSpace is your ultimate financial literacy platform designed for
+              university students. Take control of your daily expenses with
+              smart budgeting tools, track your spending, and build healthy
+              financial habits that last a lifetime.
             </p>
             <div className="mt-4">
               <a
@@ -42,12 +41,13 @@ export default function Hero() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  data-lucide="play"
-                  className="lucide lucide-play w-4 h-4 stroke-1.5"
+                  data-lucide="arrow-right"
+                  className="lucide lucide-arrow-right w-4 h-4 stroke-1.5"
                 >
-                  <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
                 </svg>
-                <span className="font-geist">Watch Showreel</span>
+                <span className="font-geist">Start Budgeting</span>
               </a>
             </div>
           </div>
@@ -55,34 +55,34 @@ export default function Hero() {
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="rounded-xl bg-white/6 backdrop-blur-sm border border-white/10 p-3 shadow-sm hover:bg-white/10 transition-all duration-300">
               <div className="text-xl font-semibold tracking-tight text-white font-geist drop-shadow-sm">
-                200+
+                10,000+
               </div>
               <p className="text-[11px] text-white/80 mt-0.5 font-geist">
-                Projects Delivered
+                Students Empowered
               </p>
             </div>
             <div className="rounded-xl bg-white/6 backdrop-blur-sm border border-white/10 p-3 shadow-sm hover:bg-white/10 transition-all duration-300">
               <div className="text-xl font-semibold tracking-tight text-white font-geist drop-shadow-sm">
-                50+
+                $500K+
               </div>
               <p className="text-[11px] text-white/80 mt-0.5 font-geist">
-                Clients Worldwide
+                Savings Achieved
               </p>
             </div>
             <div className="rounded-xl bg-white/6 backdrop-blur-sm border border-white/10 p-3 shadow-sm hover:bg-white/10 transition-all duration-300">
               <div className="text-xl font-semibold tracking-tight text-white font-geist drop-shadow-sm">
-                8
+                5
               </div>
               <p className="text-[11px] text-white/80 mt-0.5 font-geist">
-                Years in Practice
+                Years of Excellence
               </p>
             </div>
             <div className="rounded-xl bg-white/6 backdrop-blur-sm border border-white/10 p-3 shadow-sm hover:bg-white/10 transition-all duration-300">
               <div className="text-xl font-semibold tracking-tight text-white font-geist drop-shadow-sm">
-                12
+                4.9/5
               </div>
               <p className="text-[11px] text-white/80 mt-0.5 font-geist">
-                Team Members
+                User Rating
               </p>
             </div>
           </div>
