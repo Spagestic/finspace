@@ -1,65 +1,61 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
-import { DollarSign, Trophy, BookOpen, TrendingUp } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-
-const navigation = [
-  { name: "Home", href: "/", icon: DollarSign },
-  { name: "Quiz", href: "#quiz", icon: Trophy },
-  { name: "Education", href: "#education", icon: BookOpen },
-  { name: "Leaderboard", href: "/leaderboard", icon: TrendingUp },
-];
 
 export function Header() {
-  const pathname = usePathname();
-
   return (
-    <header className="relative"
-  data-element-locator="html &gt; body:nth-of-type(1) &gt; div:nth-of-type(2) &gt; header:nth-of-type(1)">
-  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      {/* <a href="#" className="flex items-center gap-2">
-        <Image
-          src="https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/cfd11ad9-7276-443d-aaea-710749f28066_1600w.png"
-          alt="Water Logo"
-          width={100}
-          height={32}
-          className="object-cover rounded"
-          unoptimized
-        />
-      </a> */}
-      
-      <nav className="hidden md:flex items-center gap-8 text-sm text-white/80">
-        <a className="hover:text-black transition font-geist" href="#">
-          Features
-        </a>
-        <a className="hover:text-black transition font-geist" href="#">
-          Solutions
-        </a>
-        <a className="hover:text-black transition font-geist" href="#">
-          Integrations
-        </a>
-        <a className="hover:text-black transition font-geist" href="#">
-          Pricing
-        </a>
-      </nav>
-      <div className="flex items-center gap-3">
-        <Link className="hidden sm:inline-flex text-sm text-black/80 hover:text-white transition font-geist" href="#">
-          Sign in
-        </Link>
-        <a href="#"
-          className="inline-flex items-center gap-2 rounded-full border-gradient before:rounded-full bg-white/5 px-4 py-2.5 text-sm font-medium hover:bg-white/10 transition font-geist">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" className="h-4 w-4">
-            <path d="m10 17 5-5-5-5" className=""></path>
-            <path d="M15 12H3" className=""></path>
-            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" className=""></path>
-          </svg>
-          Create account
-        </a>
+    <header className="relative z-20 flex items-center justify-between p-6">
+      {/* Logo */}
+      <div className="flex items-center font-semibold">
+        <Link href="/">FinSpace</Link>
       </div>
-    </div>
-</header>
-);};
+
+      {/* Navigation */}
+      <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center space-x-2">
+        <Link
+          className="rounded-full px-3 py-2 font-light text-secondary-foreground text-xs transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+          href="#features"
+        >
+          Features
+        </Link>
+        <Link
+          className="rounded-full px-3 py-2 font-light text-secondary-foreground text-xs transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+          href="#pricing"
+        >
+          Pricing
+        </Link>
+        <Link
+          className="rounded-full px-3 py-2 font-light text-secondary-foreground text-xs transition-all duration-200 hover:bg-accent hover:text-accent-foreground"
+          href="#faqs"
+        >
+          FAQs
+        </Link>
+      </nav>
+
+      <Link href="/dashboard">
+        <div
+          id="gooey-btn"
+          className="relative flex items-center group"
+          style={{ filter: "url(#gooey-filter)" }}
+        >
+          <button className="absolute right-0 px-2.5 py-2 rounded-full bg-primary hover:bg-primary/80 text-primary-foreground font-normal text-xs transition-all duration-300 cursor-pointer h-8 flex items-center justify-center -translate-x-10 group-hover:-translate-x-19 z-0">
+            <svg
+              className="w-3 h-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M7 17L17 7M17 7H7M17 7V17"
+              />
+            </svg>
+          </button>
+          <button className="px-6 py-2 rounded-full bg-primary hover:bg-primary/80 text-primary-foreground font-normal text-xs transition-all duration-300 cursor-pointer h-8 flex items-center z-10">
+            App
+          </button>
+        </div>
+      </Link>
+    </header>
+  );
+}
