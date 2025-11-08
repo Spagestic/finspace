@@ -1,4 +1,3 @@
-import QuizCard from "@/components/QuizCard";
 import EducationSection from "@/components/EducationSection";
 import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
