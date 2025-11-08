@@ -1,6 +1,11 @@
 import Image from "next/image";
 
 export default function Hero() {
+  const rgbDataURL = (r: number, g: number, b: number): string =>
+    `data:image/svg+xml;base64,${btoa(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><rect width="10" height="10" fill="rgb(25,25,112)"/></svg>`
+    )}`;
+
   return (
     <div className="relative overflow-hidden bg-white/5 border-white/10 border w-full h-screen">
       <div className="absolute inset-0 bg-linear-to-tr from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
@@ -11,6 +16,8 @@ export default function Hero() {
         loading="lazy"
         width={1920}
         height={1080}
+        placeholder="blur"
+        blurDataURL={rgbDataURL(25, 25, 112)}
       />
       <div className="absolute inset-0 bg-linear-to-t from-gray-900/60 via-transparent to-transparent pointer-events-none"></div>
 
