@@ -10,29 +10,22 @@ import {
 } from "@/components/ui/card";
 import QuizCard from "@/components/QuizCard";
 import EducationSection from "@/components/EducationSection";
-import {
-  BookOpen,
-  Trophy,
-  Target,
-  TrendingUp,
-  DollarSign,
-  PiggyBank,
-} from "lucide-react";
+import { BookOpen, Trophy, Target, TrendingUp, PiggyBank } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   const [showQuiz, setShowQuiz] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-accent/20 to-background">
+    <div className="min-h-screen bg-linear-to-b from-background via-accent/20 to-background">
+      <Header />
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10" />
+        <div className="absolute inset-0 bg-linear-to-r from-primary/5 to-primary/10" />
         <div className="relative max-w-6xl mx-auto text-center space-y-6">
-          <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
-            <DollarSign className="w-12 h-12 text-primary" />
-          </div>
+          <div className="inline-block p-3 bg-primary/10 rounded-full mb-4"></div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Fin<span className="text-primary">Space</span>
