@@ -33,11 +33,12 @@ export default function Home() {
           <div className="inline-block p-3 bg-primary/10 rounded-full mb-4">
             <DollarSign className="w-12 h-12 text-primary" />
           </div>
+
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Finance Literacy
-            <span className="block text-primary">Competition</span>
+            Fin<span className="text-primary">Space</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
             Master essential financial skills through interactive quizzes and
             educational content. Build your budgeting knowledge and compete with
             peers!
