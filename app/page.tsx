@@ -1,20 +1,15 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import QuizCard from "@/components/QuizCard";
 import EducationSection from "@/components/EducationSection";
-import { BookOpen, Trophy, Target, TrendingUp, PiggyBank } from "lucide-react";
-import Link from "next/link";
+import { Trophy } from "lucide-react";
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
+import { Features } from "@/components/features";
+
 export default function Home() {
   const [showQuiz, setShowQuiz] = useState(false);
 
@@ -24,54 +19,7 @@ export default function Home() {
         <Header />
         <Hero />
       </div>
-      {/* Features Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Why Financial Literacy Matters
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-all">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
-                  <PiggyBank className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>Smart Budgeting</CardTitle>
-                <CardDescription>
-                  Learn how to create and manage a budget that works for your
-                  lifestyle and goals
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-all">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
-                  <Target className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>Financial Goals</CardTitle>
-                <CardDescription>
-                  Set and achieve short-term and long-term financial objectives
-                  with confidence
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-all">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
-                  <BookOpen className="w-6 h-6 text-primary" />
-                </div>
-                <CardTitle>Money Management</CardTitle>
-                <CardDescription>
-                  Master essential concepts like saving, investing, and building
-                  an emergency fund
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <Features />
 
       {/* Quiz Section */}
       {showQuiz && (
